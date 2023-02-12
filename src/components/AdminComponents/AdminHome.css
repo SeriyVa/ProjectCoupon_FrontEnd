@@ -1,0 +1,8 @@
+.adminHome {
+    text-align: center;
+    display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 8cm;
+  margin-bottom: 3cm;
+}

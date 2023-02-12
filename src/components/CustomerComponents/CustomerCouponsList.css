@@ -1,0 +1,41 @@
+.coupons_list {
+    left: 40px;
+    top: 50px;
+    border: #66a5f8 solid;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 25cm;
+    height: 8.12cm;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: -1cm;
+
+}
+
+.coupons_list_coupon_special {
+    list-style: none;
+    display: flex;
+    padding-left: 1.3cm;
+    padding-bottom: 1cm;
+
+}
+
+.p1_special {
+    margin-left: 0.1cm;
+    margin-right: 4.1cm;
+    font-weight: bold;
+}
+
+.p2_special {
+    font-weight: bold;
+
+}
+
+
+
+.coupons_list_coupon_special {
+    list-style: none;
+    display: flex;
+
+}

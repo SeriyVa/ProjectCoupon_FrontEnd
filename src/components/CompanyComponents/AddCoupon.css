@@ -1,0 +1,48 @@
+.add_coupon {
+
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 8cm;
+  margin-bottom: 3cm;
+
+}
+
+.add_coupon form {
+  padding: 0.5cm;
+
+}
+
+.add_coupon Input {
+  padding: 0.1cm;
+}
+
+
+
+
+.add_coupon button {
+  margin-top: 0.25cm;
+  padding-bottom: 15cm;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #66a5f8;
+  border: #66a5f8
+}
+
+.add_coupon button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.add_coupon bu:active {
+  background: #1e57a1
+}

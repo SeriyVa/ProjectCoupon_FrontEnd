@@ -1,0 +1,90 @@
+.customer_List {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+.boxHeader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 110px;
+    background-color: gold;
+    overflow: hidden;
+}
+
+.customer_List img {
+    position: absolute;
+    width: 100%;
+    transform: translate(0%, 7%);
+
+}
+
+.customer_List p {
+    color: white;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.2cm;
+
+}
+
+
+
+
+.customers_list_box {
+    position: relative;
+    left: 40px;
+    top: 50px;
+    border: #66a5f8 solid;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 26cm;
+    height: 8.12cm;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.customers_list_customer_special {
+    list-style: none;
+    display: flex;
+    padding-left: 1.3cm;
+    padding-bottom: 1cm;
+
+
+
+}
+
+/* .p1_special{
+margin-left: -0.7cm;
+font-weight: bold;
+}
+.p2_special{
+margin-left: -0.8cm; 
+font-weight: bold;
+}
+.p3_special{
+margin-left: -1.8cm;
+font-weight: bold;
+}
+.p4_special{
+    font-weight: bold;
+    margin-left: -1.2cm;
+}
+.p5_special{
+    font-weight: bold;
+    margin-left: 3cm;
+} */
+
+
+
+.customers_list_customer_special {
+    list-style: none;
+    display: flex;
+
+}

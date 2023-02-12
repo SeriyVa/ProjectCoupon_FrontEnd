@@ -1,0 +1,77 @@
+.add_company {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
+.boxHeader{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 110px;
+  background-color: gold;
+  overflow: hidden;
+}
+
+.add_company img{
+  position: absolute;
+  width: 100%;
+  transform: translate(0% ,7%);
+  
+  
+}
+
+.add_company form {
+  padding: 0.5cm;
+
+}
+
+.add_company Input {
+  padding: 0.1cm;
+}
+
+.add_company p{
+  color:white;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 1.2cm;
+  
+}
+
+.add_company label{
+  font-weight: bold;
+}
+
+
+
+
+.add_company button {
+  margin-top: 0.25cm;
+  padding-bottom: 15cm;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #66a5f8;
+  border: #66a5f8
+}
+
+.add_company button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.add_company bu:active {
+  background: #1e57a1
+}

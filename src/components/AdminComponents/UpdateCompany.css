@@ -1,0 +1,53 @@
+.update_company {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3cm;
+
+
+}
+
+.update_company form {
+  padding: 0.5cm;
+
+}
+
+.update_company Input {
+  padding: 0.1cm;
+}
+
+.update_company label {
+  padding-right: 0.5cm;
+}
+
+
+
+
+
+.update_company button {
+  margin-top: 0.25cm;
+  padding-bottom: 15cm;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #66a5f8;
+  border: #66a5f8
+}
+
+.update_company button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.update_company bu:active {
+  background: #1e57a1
+}

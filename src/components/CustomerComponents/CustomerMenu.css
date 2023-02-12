@@ -1,0 +1,26 @@
+.customer_menu {
+  text-size-adjust: 10cm;
+}
+
+
+.customer_menu ul {
+  list-style: none;
+}
+
+.customer_menu li {
+  margin-bottom: 0.45cm;
+
+}
+
+.customer_menu a {
+  color: rgb(2, 0, 0);
+  text-decoration: none;
+}
+
+.customer_menu a:hover,
+.customer_menu a:active,
+.customer_menu a.active {
+  color: #66a5f8;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #66a5f8;
+}

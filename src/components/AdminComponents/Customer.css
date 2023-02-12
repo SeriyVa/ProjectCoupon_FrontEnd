@@ -1,0 +1,132 @@
+.customer {
+  border-bottom: #556881 solid;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  width: 25.5cm;
+  height: 1cm;
+  border-radius: 12px;
+  margin-top: -0.1cm;
+  margin-bottom: 0.2cm;
+
+}
+
+.customer_updateOn {
+  border-bottom: #556881 solid;
+  background-color: #c8dbf4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  width: 25.5cm;
+  height: 3cm;
+  border-radius: 12px;
+  margin-top: -0.1cm;
+  margin-bottom: 0.2cm;
+
+}
+
+
+.customer_updateOn li {
+  text-align: right;
+  list-style: none;
+  justify-content: left;
+  display: flex;
+  margin-top: 0.20cm;
+}
+
+
+.customer li {
+  text-align: right;
+  list-style: none;
+  justify-content: left;
+  display: flex;
+  margin-top: 0.20cm;
+
+
+}
+
+
+.customer_part {
+  width: 5cm;
+  height: 0.95cm;
+  border-radius: 12px;
+  border-top: rgb(144, 139, 139) solid;
+  margin-top: -0.027cm;
+  margin-right: 0.2cm;
+  text-align: center;
+
+}
+
+.customer_updateOn li:hover,
+.customer_updateOn li:active,
+.customer_updateOn li.active {
+
+  cursor: pointer;
+  border-bottom: 3px solid #66a5f8;
+  background-color: rgb(157, 233, 208);
+  border-radius: 12px;
+}
+
+
+
+.customer li:hover,
+.customer li:active,
+.customer li.active {
+
+  cursor: pointer;
+  border-bottom: 3px solid #66a5f8;
+  background-color: rgb(157, 233, 208);
+  border-radius: 12px;
+}
+
+
+.customer_updateOn button {
+  margin-top: 0.25cm;
+  margin-left: 0.25cm;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #66a5f8;
+  border: #66a5f8
+}
+
+.customer_updateOn button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.company_updateOn bu:active {
+  background: #1e57a1
+}
+
+
+.customer button {
+  margin-top: 0.25cm;
+  margin-left: 0.25cm;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #66a5f8;
+  border: #66a5f8
+}
+
+.customer button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.customer bu:active {
+  background: #1e57a1
+}

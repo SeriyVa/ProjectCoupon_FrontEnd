@@ -1,0 +1,22 @@
+.menu{
+    display:flex;
+    overflow-x: hidden;
+
+}
+
+.body1 {
+    position: relative;
+    height: 400px;
+    width: 220px;
+    border-right: ridge;;
+    border-color: black;
+    border-width: 1px;
+    /* background-color:aqua; */
+
+}
+
+.body2{
+    height: 505px;
+    width: 100%;
+    /* background-color: grey; */
+}

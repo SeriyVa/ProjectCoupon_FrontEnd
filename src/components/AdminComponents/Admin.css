@@ -1,0 +1,78 @@
+.admin {
+  text-size-adjust: 10cm;
+  text-align: center;
+  padding: 2cm;
+
+}
+
+
+.admin form {
+  padding: 0.5cm;
+}
+
+.admin Input {
+  padding: 0.1cm;
+}
+
+.admin ul {
+  float: right;
+  justify-content: center;
+  padding-right: 32px;
+  display: flex;
+  list-style: none;
+  margin-top: -50px;
+}
+
+.admin li {
+
+  margin-bottom: 1cm;
+  width: 9cm;
+
+}
+
+
+.admin a {
+  color: rgb(2, 0, 0);
+  text-decoration: none;
+}
+
+.admin a:hover,
+.admin a:active,
+.admin a.active {
+  color: #1e57a1;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #1e57a1;
+}
+
+.admin h1 {
+  text-align: center;
+  margin-top: -110px;
+}
+
+
+.admin button {
+  margin-top: 0.25cm;
+  padding-bottom: 15cm;
+
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: #66a5f8;
+  border: #66a5f8
+}
+
+.admin button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.admin bu:active {
+  background: #1e57a1
+}

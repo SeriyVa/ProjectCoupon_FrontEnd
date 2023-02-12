@@ -1,0 +1,167 @@
+.login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 469px;
+  width: 100%;
+  background-color: #66a5f8;
+}
+
+.loginMenu {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 75px;
+  top: 0px;
+  border-bottom: ridge;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  text-size-adjust: 10cm;
+  text-decoration-color: #c5defe;
+  background: rgba(20, 20, 20, 0.5);
+}
+
+.loginMenu {
+  position: absolute;
+  z-index: 1;
+  bottom: 200px;
+  transition: 0.3s ease;
+}
+
+
+.log {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  border-color: black;
+  border-style: ridge;
+  border-width: 1px;
+  left: 420px;
+  text-decoration-color: #c5defe;
+  width: 10cm;
+  height: 10cm;
+  background: rgba(20, 20, 20, 0.5);
+}
+
+.newP {
+  z-index: 1;
+  top: 255px;
+  margin-left: 70%;
+  font-style: oblique;
+  font-size: 1cm;
+  color: white;
+}
+
+
+.image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+
+}
+
+
+.login form {
+  z-index: 1;
+  padding-top: 1cm;
+
+}
+
+.login p {
+  position: relative;
+  font-weight: bold;
+  border-bottom: black;
+}
+
+.login label {
+  font-weight: bold;
+}
+
+.login input {
+  padding: 0.1cm;
+
+}
+
+.login input:focus {
+  background-color: #c5defe;
+}
+
+.login input:invalid {
+  background-color: rgb(240, 126, 126);
+}
+
+.action {
+  text-align: center;
+}
+
+.login ul {
+  padding-top: 0.7cm;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  list-style: none;
+}
+
+.login li {
+  justify-items: center;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 1cm;
+
+}
+
+
+.login a {
+  color: rgb(229, 229, 229);
+  text-decoration: none;
+}
+
+.login a:hover,
+.login a:active,
+.login a.active {
+  color: #1e57a1;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #1e57a1;
+}
+
+
+.login button {
+  position: relative;
+  top: 70%;
+  transition-duration: 0.4s;
+  margin: 20px 120px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 6px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: rgba(20, 20, 20, 0.01);
+  border: rgba(20, 20, 20, 0.01);
+}
+
+.login button:hover {
+  cursor: pointer;
+  background: #1e57a1
+}
+
+.login button:active {
+  background: #1e57a1
+}
+
+.login button:disabled,
+.login button:focus:disabled,
+.login button:hover:disabled,
+.login button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: auto;
+}
