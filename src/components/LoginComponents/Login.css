@@ -2,10 +2,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 469px;
+  height: 82vh;
   width: 100%;
-  background-color: #66a5f8;
+  background: #66a5f8;
 }
 
 .loginMenu {
@@ -26,22 +25,23 @@
 .loginMenu {
   position: absolute;
   z-index: 1;
-  bottom: 200px;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in;
+  transform: translateY(0);
+  transition: opasity 400ms ease-in-out, transform 150ms ease-in-out ;
 }
 
 
 .log {
-  position: absolute;
+  /* position: absolute; */
   top: 50px;
+  justify-items: center;
   z-index: 1;
   border-color: black;
   border-style: ridge;
   border-width: 1px;
-  left: 420px;
   text-decoration-color: #c5defe;
   width: 10cm;
-  height: 10cm;
+  height: 9cm;
   background: rgba(20, 20, 20, 0.5);
 }
 
@@ -59,7 +59,6 @@
   position: absolute;
   top: 0;
   width: 100%;
-
 
 }
 
