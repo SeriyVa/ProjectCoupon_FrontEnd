@@ -15,13 +15,15 @@ const Home = () => {
     
     //jQuery
     var images:any = [food,vacation,restaurant,fashion]
-    var slideImage:any;
+    var focusSlide:boolean = false;
     var currentImage:any=null;
     $(function(){
         
+
+
         $('div button').on('mouseover',function(e){
-        
-           if(currentImage===null){
+
+if(focusSlide==false){
             if(this.textContent==='Food'){
                 currentImage=images[0]
                }else if(
@@ -34,30 +36,35 @@ const Home = () => {
                         this.textContent==='Fashion'){
                             currentImage=images[3]
                         }
+
                         $('#categoryImg').attr('src',currentImage)
                         $('#firstImg').fadeOut(500)
-                       
-                
-           }else{
-            if(this.textContent==='Food'){
-                slideImage=images[0]
-           }else if(
-            this.textContent==='Vacation'){
-                slideImage=images[1]
-            }else if(
-                this.textContent==='Restaurant'){
-                    slideImage=images[2]
-                }else if(
-                    this.textContent==='Fashion'){
-                        slideImage=images[3]
-                    }
-                    $('#categoryImg').fadeOut(500);
-                    // $('#slideImg').attr('src',slideImage)
-                    $('#slideImg').fadeIn(600)
-                                }
+                        focusSlide = true;
+                        
 
-           
-                   
+                    } else {
+                        if(this.textContent==='Food'){
+                            currentImage=images[0]
+                           }else if(
+                            this.textContent==='Vacation'){
+                                currentImage=images[1]
+                            }else if(
+                                this.textContent==='Restaurant'){
+                                    currentImage=images[2]
+                                }else if(
+                                    this.textContent==='Fashion'){
+                                        currentImage=images[3]
+                                    }
+                        $('#categoryImg').slideUp(200,function(){
+                            
+                              $('#categoryImg').attr('src',currentImage)
+                              $('#categoryImg').slideDown(200)
+
+                        })
+                        
+                            
+                        }
+                          
                 $(this).css({
                     'background-color': 'yellow',
                     'border-left':'solid',
@@ -86,14 +93,12 @@ const Home = () => {
                 'padding-right':'0%'
                 
             },500)
-
-           
+  
                 });
                 
                 $('#categoryDiv').on('mouseleave',function(e){
-                    
-                    $('#firstImg').fadeIn(1000)
-                    currentImage=null;
+                    focusSlide = false;
+                    $('#firstImg').fadeIn(500)
                 })
     })
          
@@ -122,7 +127,6 @@ const Home = () => {
                 
                 <div className='img_box'>
                 <img id='firstImg' className='image_box3_first' src={image6} alt=""></img>
-                <img id= 'slideImg' className='image_box3_category' src={slideImage} alt="" />
                  <img id='categoryImg' className='image_box3_category' src={currentImage} alt="" />
             </div>   
             <div id='categoryDiv' className='boxMenu_in_box3'>
