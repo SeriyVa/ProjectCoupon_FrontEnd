@@ -6,17 +6,46 @@ import restaurant from '../images/image4.jpg'
 import fashion from '../images/image8.jpg'
 import './Home.css';
 import $, { css, event } from 'jquery';
-
-
+import { log } from 'console';
 
 
  
 const Home = () => {
     
     //jQuery
-    var images:any = [food,vacation,restaurant,fashion]
-    var firstFocus:boolean = false;
-    var currentImage:any=null;
+
+    
+    const picAndText = {
+        foodCategory:{
+            picture:food,
+            text:"Fresh fruits and vegetables everyday straight from the farmer to you."
+        },
+        electricityCategory:{
+            picture:food,
+            text:"You can choose from a wide variety of electrical products from the best in themarket and from different companies."
+        },
+        restaurantCategory:{
+            picture:restaurant,
+            text:"If you are a breakfast, lunch or dinner person, or even a cocktail with friends person this is the coupon for you."
+        },
+        vacationCategory:{
+            picture:vacation,
+            text:"With us you can find flights, hotels and combined deals at attractive prices to all destinations in the world."
+        },
+        fashionCategory:{
+            picture:fashion,
+            text:"It's time to dress up ! Cool clothing items are waiting for you in the stores."
+        }
+
+    }
+
+    // let images:any = [food,vacation,restaurant,fashion]
+    let firstFocus:boolean = false;
+    let currentImage:any=null;
+    let expCategoryText:string = "You can choose from 5 diffrents categories"
+console.log(expCategoryText)
+    
+
     $(function(){
         
 
@@ -25,47 +54,58 @@ const Home = () => {
 
 if(firstFocus==false){
             if(this.textContent==='Food'){
-                currentImage=images[0]
+                currentImage=picAndText.foodCategory.picture
+                expCategoryText= picAndText.foodCategory.text
                }else if(
                 this.textContent==='Vacation'){
-                    currentImage=images[1]
+                    currentImage=picAndText.vacationCategory.picture
+                    expCategoryText= picAndText.vacationCategory.text
                 }else if(
                     this.textContent==='Restaurant'){
-                        currentImage=images[2]
+                        currentImage=picAndText.restaurantCategory.picture
+                        expCategoryText= picAndText.restaurantCategory.text
                     }else if(
                         this.textContent==='Fashion'){
-                            currentImage=images[3]
+                            currentImage=picAndText.fashionCategory.picture
+                            expCategoryText= picAndText.fashionCategory.text
                         }
 
                         $('#categoryImg').attr('src',currentImage)
+                        $('#expCategoryText').text(expCategoryText)
                         $('#firstImg').fadeOut(500)
                         firstFocus = true;
+                
                         
 
                     } else {
                         if(this.textContent==='Food'){
-                            currentImage=images[0]
+                            currentImage=picAndText.foodCategory.picture
+                            expCategoryText= picAndText.foodCategory.text
                            }else if(
                             this.textContent==='Vacation'){
-                                currentImage=images[1]
+                                currentImage=picAndText.vacationCategory.picture
+                                expCategoryText= picAndText.vacationCategory.text
                             }else if(
                                 this.textContent==='Restaurant'){
-                                    currentImage=images[2]
+                                    currentImage=picAndText.restaurantCategory.picture
+                                    expCategoryText= picAndText.restaurantCategory.text
                                 }else if(
                                     this.textContent==='Fashion'){
-                                        currentImage=images[3]
+                                        currentImage=picAndText.fashionCategory.picture
+                                        expCategoryText= picAndText.fashionCategory.text
                                     }
                         $('#categoryImg').animate({
-                            'left':'-140%'
+                            'left':'-200vh'
                         },function(){
                               $('#categoryImg').stop(true,true);
                               $('#categoryImg').attr('src',currentImage)
+                              $('#expCategoryText').text(expCategoryText)
                               $('#categoryImg').animate({
                                'left':'0'
                               })
 
                         })
-                        
+                       
                             
                         }
                           
@@ -101,6 +141,7 @@ if(firstFocus==false){
                 });
                 
                 $('#categoryDiv').on('mouseleave',function(e){
+                    $('#expCategoryText').text("You can choose from 5 diffrents categories")
                     firstFocus = false;
                     $('#firstImg').fadeIn(500)
                 })
@@ -125,11 +166,11 @@ if(firstFocus==false){
                         
                 </li>
             </div>
-            <p className='p3'> You can choose from 5 diffrents categories</p>
+            
 
             <div className='box4'>     
-                
-                <div className='img_box'>
+            <div className='p_in_box'><p id='expCategoryText' className='p3'>{expCategoryText}</p></div>
+               <div className='img_box'>
                 <img id='firstImg' className='image_box3_first' src={image6} alt=""></img>
                  <img id='categoryImg' className='image_box3_category' src={currentImage} alt="" />
             </div>   

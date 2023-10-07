@@ -11,6 +11,7 @@
   border-bottom: ridge;;
   border-color: rgb(2, 2, 97);
   border-width: 1px;
+  z-index: 999;
 }
 
 .span {
@@ -31,8 +32,10 @@
 }
 
 .header li {
+  font-size: 3vh;
   margin: 0 1rem;
   width: 5rem;
+  padding-right: 3vh;
 }
 
 .header a {

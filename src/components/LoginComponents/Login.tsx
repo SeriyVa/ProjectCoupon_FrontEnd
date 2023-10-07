@@ -212,7 +212,6 @@ const LoginForm = () => {
     return (
         <div className='login'> 
             <div>
-                <img className='image' src={image} alt=""  />
             <p className='newP'>Our coupons,<br /> your pleasures.</p> 
             <div className={`loginMenu ${loginFormIsOn ? 'log' : ''}`}>
          {!loginFormIsOn &&<li><button onClick={()=>loginForm(clientType.ADMIN)} >Admin</button><button onClick={()=>loginForm(clientType.COMPANY)} >Company</button><button onClick={()=>loginForm(clientType.CUSTOMER)} >Customer</button></li>}

@@ -31,7 +31,7 @@ const MainHeader = () => {
       <nav>
         <ul>
           {!isLoggedIn && <li> <NavLink activeClassName='active' to='/home'>Home</NavLink></li>}
-          {!isLoggedIn && <li><NavLink activeClassName='active' to='/Login'>login</NavLink> </li>}
+          {!isLoggedIn && <li><NavLink activeClassName='active' to='/login'>Login</NavLink> </li>}
           {isLoggedIn && <li><button onClick={logout}>logout</button></li>}
 
         </ul>

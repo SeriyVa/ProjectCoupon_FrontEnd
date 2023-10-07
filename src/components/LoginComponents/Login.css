@@ -1,38 +1,34 @@
 .login {
   position: relative;
   display: flex;
-  flex-direction: column;
-  height: 82vh;
-  width: 100%;
-  background: #66a5f8;
+  /* flex-direction: column; */
+  padding: 17%;
+  background-image:url('../../images/image7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 .loginMenu {
   position: absolute;
+  left: 0;
+  top: 0;
   z-index: 1;
   width: 100%;
   height: 75px;
-  top: 0px;
   border-bottom: ridge;
   border-color: black;
   border-width: 1px;
-  text-align: center;
+  /* text-align: center; */
   text-size-adjust: 10cm;
   text-decoration-color: #c5defe;
   background: rgba(20, 20, 20, 0.5);
 }
 
-.loginMenu {
-  position: absolute;
-  z-index: 1;
-  transition: 0.3s ease-in;
-  transform: translateY(0);
-  transition: opasity 400ms ease-in-out, transform 150ms ease-in-out ;
-}
 
 
 .log {
-  /* position: absolute; */
+  position: absolute;
   top: 50px;
   justify-items: center;
   z-index: 1;

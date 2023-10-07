@@ -20,7 +20,8 @@
     border-color: black;
     border-width: 1px;
     width: 100%;
-    background-color: yellow;
+    height: 15vh;
+    background-color: rgb(128, 128, 23);
 
 }
 
@@ -28,7 +29,7 @@
     position: relative;
     box-sizing: border-box;
     display: flex;
-    height: 410px;
+    height: 75vh;
     width: 100%;
     background-color: orange;
     
@@ -41,8 +42,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items:center;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 40%;
     background-color:orange ;
 }
 
@@ -59,8 +60,9 @@
 
 .img_box{
     position: relative;
-    width: 150%;
+    width: 100%;
 }
+
 
 .p1 {
     text-align: center;
@@ -71,18 +73,20 @@
 
 
 .p2{
-    font-size: 0.5cm;
+    font-size: 3vh;
     text-align: center;
-    left: 26px;
+    align-items: center;
     font-weight: bold;
         
 }
 
 .p3 {
-    bottom: 250px;
-    text-align: center;
-    font-size: 1cm;
+    z-index: 1;
+    font-size: 5vh;
     font-weight: bold;
+    text-align: center;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 
@@ -90,20 +94,25 @@
 .image1 {
     height: 100%;
     width: 50%;
-    
-
 }
 
 .image_box3_first {
     position: absolute;
     height: 100%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .image_box3_category{
     position: absolute;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
+}
+
+.p_in_box{
+    position: relative;
+    z-index: 999;
+    background-color: orange;
+    width: 25%;
 }
 
 
